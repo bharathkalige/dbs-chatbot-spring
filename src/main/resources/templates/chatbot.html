@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>chatBot</title>
+</head>
+<body>
+	<h1>Enter Your question here</h1>
+	<form action="chatbot" method="post" th:object="${botRequest}">
+		Enter Request : <input type="text" th:field="*{requestString}" />
+		<br> 
+		<input type="submit" value="Submit"/>
+	</form>
+</body>
+</html>
